@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ATP - Comunicação aplicada</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <style>
+      .w3-sidebar {
+        background-color: rgb(254, 0, 26);
+      }
+      .w3-sidebar * {
+        color: white;
+      }
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: 'Poppins', sans-serif;
+      }
+      body {
+        font-size: 16px;
+      }
+      .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      .w3-half img:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar/menu -->
+    <nav
+      class="w3-sidebar #ffcc00 w3-collapse w3-top w3-large w3-padding"
+      style="z-index: 3; width: 300px; font-weight: bold"
+      id="mySidebar"
+    >
+      <br />
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-button w3-hide-large w3-display-topleft"
+        style="width: 100%; font-size: 22px"
+        >Close Menu</a
+      >
+      <div class="w3-container">
+        <h3 class="w3-padding-64">
+          <b>Coca Cola</b>
+        </h3>
+      </div>
+      <div class="w3-bar-block">
+        <a
+          href="#"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Home</a
+        >
+        <a
+          href="#showcase"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Portfólio</a
+        >
+        <a
+          href="#services"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Nossa história</a
+        >
+        <a
+          href="#designers"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Fundadores</a
+        >
+        <a
+          href="#packages"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Comunicação Empresarial</a
+        >
+
+        <a
+          href="#noticia"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Notícia</a
+        >
+        <a
+          href="#contact"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Contato</a
+        >
+      </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header
+      class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding"
+    >
+      <a
+        href="javascript:void(0)"
+        class="w3-button w3-red w3-margin-right"
+        onclick="w3_open()"
+        >☰</a
+      >
+      <span>Company Name</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div
+      class="w3-overlay w3-hide-large"
+      onclick="w3_close()"
+      style="cursor: pointer"
+      title="close side menu"
+      id="myOverlay"
+    ></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+      <!-- Header -->
+      <div class="w3-container" style="margin-top: 80px" id="showcase">
+        <h1 class="w3-jumbo"><b>Comunicação - Coca Cola</b></h1>
+        <h1 class="w3-xxxlarge w3-text-red"><b>Portfólio.</b></h1>
+        <hr style="width: 50px; border: 5px solid red" class="w3-round" />
+      </div>
+
+      <!-- Photo grid (modal) -->
+      <div class="w3-row-padding">
+        <p>
+          A Coca-Cola, com seus produtos mundialmente famosos, busca atender a
+          um público amplo e diverso.
+        </p>
+        <p>
+          Para alcançar essa abrangência, a marca oferece opções como versões
+          diet e sem açúcar, direcionadas a um público que busca controlar o
+          peso ou possui diabetes, como adultos mais velhos. Além disso, a
+          variedade de tamanhos das embalagens permite atender a diferentes
+          necessidades, desde o consumo individual até grandes reuniões
+          familiares, considerando as realidades de diferentes faixas de renda.
+        </p>
+
+        <p>
+          Abaixo estão alguns dos principais produtos do grande portifólio que a
+          marca detém:
+        </p>
+        <div class="w3-half">
+          <div class="image-container">
+            <img
+              src="https://boa.vtexassets.com/unsafe/fit-in/568x568/center/middle/https%3A%2F%2Fboa.vtexassets.com%2Farquivos%2Fids%2F556664%2FRefrigerante-Original-Coca-Cola-Lata-350Ml.jpg%3Fv%3D638495659932600000"
+              style="width: 50%"
+              onclick="onClick(this)"
+              alt="Lata de Coca Cola"
+              title="Icy refreshment in a can."
+            />
+            <div class="text-box">
+              <p>
+                Coca-Cola: possui um público-alvo amplo e diverso, que abrange
+                pessoas de diferentes idades, classes sociais, estilos de vida e
+                interesses.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img
+              src="https://images.tcdn.com.br/img/img_prod/858764/refrigerante_sprite_350ml_c_06_613_1_20201023083826.jpg"
+              style="width: 50%"
+              onclick="onClick(this)"
+              alt="Lata de Sprite"
+              title="Crisp, clean lemon-lime flavor."
+            />
+            <div class="text-box">
+              <p>
+                Sprite: O público-alvo da Sprite aprecia o sabor cítrico e
+                refrescante da bebida. A Sprite se concentra principalmente em
+                jovens entre 18 e 24 anos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-half">
+          <div class="image-container">
+            <img
+              src="https://io.convertiez.com.br/m/superpaguemenos/shop/products/images/27969/large/refrigerante-fanta-laranja-220ml_76052.jpg"
+              style="width: 50%"
+              onclick="onClick(this)"
+              alt="Lata de Fanta"
+              title="Bursting with juicy orange flavor."
+            />
+            <div class="text-box">
+              <p>
+                Fanta Laranja: Adolescentes e jovens adultos, o público se
+                identifica com a comunicação vibrante e irreverente da marca, e
+                aprecia o sabor refrescante e açucarado da bebida.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img
+              src="https://espacoprime.fbitsstatic.net/img/p/schweppes-citrus-original-350ml-70181/256694-1.jpg?w=800&h=800&v=no-change&qs=ignore"
+              style="width: 50%"
+              onclick="onClick(this)"
+              alt="Lata de Schweppes"
+              title="Sophisticated citrus refreshment."
+            />
+            <div class="text-box">
+              <p>
+                Schweppes Citrus: Esse público busca bebidas com sabor mais
+                complexo e refinado, apreciando as notas cítricas e o leve
+                amargor da Schweppes Citrus. Faixa etária entre 25 e 55 anos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .text-box {
+          background-color: #f2f2f2; /* Light gray background */
+          padding: 5px; /* Add some space around the text */
+          text-align: center; /* Center the text horizontally */
+        }
+
+        .image-container {
+          display: flex; /* Allow for flexbox layout */
+          flex-direction: column; /* Stack elements vertically */
+          align-items: center; /* Center elements horizontally */
+          justify-content: center; /* Center elements vertically within container */
+        }
+      </style>
+
+      <style>
+        .text-box {
+          background-color: #f2f2f2; /* Light gray background */
+          padding: 5px; /* Add some space around the text */
+          text-align: center; /* Center the text horizontally */
+        }
+      </style>
+
+      <!-- Modal for full size images on click-->
+      <div
+        id="modal01"
+        class="w3-modal w3-black"
+        style="padding-top: 0"
+        onclick="this.style.display='none'"
+      >
+        <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+        <div
+          class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+        >
+          <img id="img01" class="w3-image" />
+          <p id="caption"></p>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="w3-container" id="services" style="margin-top: 75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Nossa história.</b></h1>
+        <hr style="width: 50px; border: 5px solid red" class="w3-round" />
+        <p>
+          Em 1886, na cidade de Atlanta, EUA, o farmacêutico John Pemberton deu
+          vida à Coca-Cola, inicialmente um tônico medicinal.
+        </p>
+        <p>
+          A produção que a princípio era artesanal sugeria um número limitado de
+          funcionários. Sua expansão é marcada por estratégias inovadoras, como
+          cupons e garrafas icônicas, e adaptabilidade, ajustando-se às culturas
+          e preferências locais. Hoje, a companhia conta com mais de 700 mil
+          colaboradores em 2024, demonstrando um crescimento impressionante. A
+          marca se dedica a refrescar o mundo e fazer a diferença através de
+          seus produtos, promovendo a alegria e o bem-estar das pessoas.
+        </p>
+        <p>
+          A Coca-Cola busca alcançar essa missão com liderança, paixão e
+          responsabilidade, sempre norteada por seus valores fundamentais:
+          trabalho em equipe, integridade e sustentabilidade. Um exemplo disso é
+          o compromisso da empresa com a sustentabilidade, investindo em
+          embalagens recicláveis e reduzindo o impacto ambiental de suas
+          operações.
+        </p>
+      </div>
+
+      <!-- Designers -->
+      <div class="w3-container" id="designers" style="margin-top: 75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Fundadores.</b></h1>
+        <hr style="width: 50px; border: 5px solid red" class="w3-round" />
+
+        <p>
+          Juntos, Pemberton e Candler lançaram as bases para a jornada
+          extraordinária da Coca-Cola, que continua a moldar a história da
+          indústria de bebidas até hoje.
+        </p>
+      </div>
+
+      <!-- The Team -->
+      <div class="w3-row-padding w3-grayscale">
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <img src="/team1.png" alt="John" style="width: 100%" />
+            <div class="w3-container">
+              <h3>John Pemberton</h3>
+              <p class="w3-opacity">Inventor</p>
+              <p>
+                John Stith Pemberton foi um farmacêutico e inventor
+                estadunidense responsável por ser o criador da fórmula da
+                Coca-Cola.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <img src="/team2.png" alt="Jane" style="width: 100%" />
+            <div class="w3-container">
+              <h3>Asa Candler</h3>
+              <p class="w3-opacity">Designer</p>
+              <p>
+                Asa Griggs Candler foi um magnata dos negócios que fez a maior
+                parte de sua fortuna comprando a fórmula da Coca-Cola.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Packages / Pricing Tables -->
+      <div class="w3-container" id="packages" style="margin-top: 75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Comunicação Empresarial</b></h1>
+        <hr style="width: 50px; border: 5px solid red" class="w3-round" />
+        <h4>Fluxo comunicacional</h4>
+        <p>
+          A cultura e a comunicação organizacional da Coca-Cola seguem um modelo
+          moderno, onde ideias e opiniões fluem livremente seja verticalmente
+          (cima para baixo e de baixo para cima) ou horizontalmente (entre
+          diferentes áreas); independentemente da hierarquia, os líderes são
+          instruídos a ouvir e considerar as sugestões de todos os funcionários
+          ao tomar decisões.
+        </p>
+        <h4>Canais de comunicação internos</h4>
+        <p>
+          Os líderes da Coca-Cola implementaram canais de comunicação eficazes
+          que permitem o fluxo livre de mensagens entre a gerência e os
+          funcionários. Esses canais incluem mecanismos internos como ramais
+          telefônicos, intranet, sistemas de e-mail, murais de avisos e
+          reuniões. O fluxo de mensagens é controlado de acordo com a
+          importância da mensagem e o destinatário pretendido, garantindo que
+          chegue apenas às partes envolvidas.
+        </p>
+
+        <h4>Canais de comunicação externos</h4>
+
+        <p>
+          Redes sociais (Instagram, Facebook, Twitter, YouTube, TikTok)
+          Publicidade online e offline Relações públicas Eventos e patrocínios
+          Marketing de influência Conteúdo digital (blog, site) Relatórios de
+          sustentabilidade. A Coca-Cola utiliza esses canais de forma
+          estratégica e integrada para se conectar com o público global,
+          construir uma marca forte e alcançar seus objetivos de negócio.
+        </p>
+        <h4>Desafios e soluçoes</h4>
+        <p>
+          <b>Alinhamento global:</b> garantir que a mensagem da empresa seja
+          consistente em diferentes países e culturas. Solução: adaptação das
+          campanhas e materiais de comunicação à realidade local, valorizando a
+          diversidade.</p><b>Comunicação interna eficaz:</b> alcançar todos os
+          colaboradores, mesmo em uma empresa com alta rotatividade. Solução:
+          diversificar os canais de comunicação, investir em treinamento e
+          feedback e criar uma cultura de comunicação aberta. </p><b>Gerenciamento de
+          crises:</b> responder de forma rápida e eficiente a situações negativas
+          que afetem a imagem da empresa. Solução: ter um plano de comunicação
+          em crise bem definido, com porta-vozes treinados e canais de
+          comunicação ágeis. Medição do impacto da comunicação: avaliar a
+          efetividade das ações e otimizar as estratégias. Solução: utilizar
+          ferramentas de análise de dados e monitorar indicadores de desempenho
+          (KPIs).
+        </p>
+      </div>
+
+      <div>
+        <p style="text-align: center">
+          <img src="fluxograma.png" alt="Fluxograma" />
+        </p>
+      </div>
+
+      <div class="w3-container" id="noticia" style="margin-top: 75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Notícia</b></h1>
+        <hr style="width: 50px; border: 5px solid red" class="w3-round" />
+        16/10/2023
+        <h2>Thaís Moraes assume comunicação da Coca-Cola</h2>
+        <h4>Nova Head Brasil e Cone Sul</h4>
+        A The Coca-Cola Company anuncia Thaís Moraes como nova head de
+        comunicações na Coca-Cola Brasil e Cone Sul (Chile, Argentina, Paraguai,
+        Uruguai e Bolívia). Com mais de 20 anos de experiência em comunicação
+        corporativa e responsabilidade social, a executiva já atuou em empresas
+        multinacionais na área de embalagens para bebidas. Em sua nova função,
+        Thaís se concentrará em impulsionar estratégias de comunicação para
+        engajamento dos funcionários, reputação da marca, liderança de
+        pensamento ESG e visibilidade dos produtos, além de dar suporte a todo o
+        Sistema Coca-Cola, formado por sete fabricantes. A head é graduada em
+        jornalismo, com MBA em gestão e desenvolvimento de negócios, MBA em
+        marketing e branding, além de especialização em recursos humanos. No
+        novo cargo, Thaís substituirá Daniela Valverde, que assumiu a posição
+        global de gerente sênior de comunicação de sustentabilidade, em Atlanta,
+        Estados Unidos, onde fica a sede da companhia.
+
+        <h5>Parafrase:</h5>
+        Com base na nomeação de Thaís Moraes como a nova head de comunicações da
+        Coca-Cola Brasil, podemos inferir que a empresa valoriza a área de
+        comunicação e está comprometida em impulsionar estratégias para
+        impulsionar a reputação da marca, liderança de pensamento e o
+        engajamento dos funcionários.
+      </div>
+
+      <!-- Contact -->
+      <div class="w3-container" id="contact" style="margin-top: 75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Contato</b></h1>
+        <hr style="width: 50px; border: 5px solid red" class="w3-round" />
+        <p>Aqui estão os canais oficiais do atendimento Coca-Cola:</p>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-section">
+            <label>Telefone: 0800-021-21-21</label>
+          </div>
+          <div class="w3-section">
+            <label>WhatsApp: +55 21 4002-2121</label>
+          </div>
+          <div class="w3-section">
+            <label>Email/Imprensa: imprensacoca-cola@edelman.com</label>
+          </div>
+        </form>
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <!-- W3.CSS Container -->
+    <div
+      class="w3-light-grey w3-container w3-padding-32"
+      style="margin-top: 75px; padding-right: 58px"
+    >
+      <p class="w3-right">Feito por Raul Oliveira</p>
+    </div>
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById('mySidebar').style.display = 'block';
+        document.getElementById('myOverlay').style.display = 'block';
+      }
+
+      function w3_close() {
+        document.getElementById('mySidebar').style.display = 'none';
+        document.getElementById('myOverlay').style.display = 'none';
+      }
+
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById('img01').src = element.src;
+        document.getElementById('modal01').style.display = 'block';
+        var captionText = document.getElementById('caption');
+        captionText.innerHTML = element.alt;
+      }
+    </script>
+  </body>
+</html>
